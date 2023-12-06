@@ -14,10 +14,11 @@ increaseButton.addEventListener('click', inc);
 //Functions
 function dec(){
     count -= 1;
-    
+    render();
 }
 function inc(){
     count += 1;
+    render();
 }
 
 function render(){
