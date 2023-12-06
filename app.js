@@ -11,6 +11,7 @@ console.log(rootElement, increaseButton, decreaseButton, display);
 //Setup
 decreaseButton.addEventListener('click', dec);
 increaseButton.addEventListener('click', inc);
+render();
 //Functions
 function dec(){
     count -= 1;
