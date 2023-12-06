@@ -7,6 +7,6 @@ const rootElement = document.querySelector('#app');
 const increaseButton = document.querySelector('#increase');
 const decreaseButton = document.querySelector('#decrease');
 const display = document.querySelector('#display');
-
+console.log(rootElement, increaseButton, decreaseButton, display);
 //Setup
 //Functions
