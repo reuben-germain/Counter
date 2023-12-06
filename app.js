@@ -10,5 +10,11 @@ const display = document.querySelector('#display');
 console.log(rootElement, increaseButton, decreaseButton, display);
 //Setup
 decreaseButton.addEventListener('click', dec);
+increaseButton.addEventListener('click', inc);
 //Functions
-function dec(){}
+function dec(){
+    console.log('decreasing');
+}
+function inc(){
+    console.log('increasing');
+}
