@@ -13,8 +13,8 @@ decreaseButton.addEventListener('click', dec);
 increaseButton.addEventListener('click', inc);
 //Functions
 function dec(){
-    console.log('decreasing');
+    count -= 1;
 }
 function inc(){
-    console.log('increasing');
+    count += 1;
 }
