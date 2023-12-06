@@ -22,5 +22,5 @@ function inc(){
 }
 
 function render(){
-
+    display.textContent = count;
 }
