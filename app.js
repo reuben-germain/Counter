@@ -9,4 +9,6 @@ const decreaseButton = document.querySelector('#decrease');
 const display = document.querySelector('#display');
 console.log(rootElement, increaseButton, decreaseButton, display);
 //Setup
+decreaseButton.addEventListener('click', );
 //Functions
+function dec(){}
