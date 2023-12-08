@@ -1,30 +1,30 @@
 const Counter = {
     count: 0,
     init: function(){
-        Counter.cacheDom();
-        Counter.addListeners();
-        Counter.render();
+        this.cacheDom();
+        this.addListeners();
+        this.render();
     },
     cacheDom: function(){
-        Counter.rootElement = document.querySelector('#app');
-        Counter.increaseButton = Counter.rootElement.querySelector('.increase');
-        Counter.decreaseButton = Counter.rootElement.querySelector('.decrease');
-        Counter.display = Counter.rootElement.querySelector('.display');
+        this.rootElement = document.querySelector('#app');
+        this.increaseButton = this.rootElement.querySelector('.increase');
+        this.decreaseButton = this.rootElement.querySelector('.decrease');
+        this.display = this.rootElement.querySelector('.display');
     },
     addListeners: function(){
-        Counter.increaseButton.addEventListener('click', Counter.inc);
-        Counter.decreaseButton.addEventListener('click', Counter.dec);
+        this.increaseButton.addEventListener('click', this.inc.bind(this));
+        this.decreaseButton.addEventListener('click', this.dec.bind(this));
     },
     render: function(){
-        Counter.display.textContent = Counter.count;
+        this.display.textContent = this.count;
     },
     inc: function(){
-        Counter.count += 1;
-        Counter.render();
+        this.count += 1;
+        this.render();
     },
     dec: function(){
-        Counter.count -= 1;
-        Counter.render();
+        this.count -= 1;
+        this.render();
     }
 };
 Counter.init();
