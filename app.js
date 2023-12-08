@@ -14,6 +14,7 @@ const Counter = {
     addListeners: function(){},
     render: function(){},
 };
+Counter.init();
 
 //Data & Variables
 let count = 0;
