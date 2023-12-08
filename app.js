@@ -1,6 +1,10 @@
 const Counter = {
     count: 0,
-    init: function(){},
+    init: function(){
+        Counter.cacheDom();
+        Counter.addListeners();
+        Counter.render();
+    },
     cacheDom: function(){},
     addListeners: function(){},
     render: function(){},
