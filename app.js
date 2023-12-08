@@ -5,7 +5,12 @@ const Counter = {
         Counter.addListeners();
         Counter.render();
     },
-    cacheDom: function(){},
+    cacheDom: function(){
+        const rootElement = document.querySelector('#app');
+        const increaseButton = rootElement.querySelector('.increase');
+        const decreaseButton = rootElement.querySelector('.decrease');
+        const display = rootElement.querySelector('.display');
+    },
     addListeners: function(){},
     render: function(){},
 };
