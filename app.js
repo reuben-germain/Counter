@@ -7,9 +7,9 @@ const Counter = {
     },
     cacheDom: function(){
         Counter.rootElement = document.querySelector('#app');
-        Counter.increaseButton = rootElement.querySelector('.increase');
-        Counter.decreaseButton = rootElement.querySelector('.decrease');
-        const display = rootElement.querySelector('.display');
+        Counter.increaseButton = Counter.rootElement.querySelector('.increase');
+        Counter.decreaseButton = Counter.rootElement.querySelector('.decrease');
+        const display = Counter.rootElement.querySelector('.display');
     },
     addListeners: function(){},
     render: function(){},
