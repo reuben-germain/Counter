@@ -15,9 +15,17 @@ const Counter = {
         Counter.increaseButton.addEventListener('click', Counter.inc);
         Counter.decreaseButton.addEventListener('click', Counter.dec);
     },
-    render: function(){},
-    inc: function(){},
-    dec: function(){}
+    render: function(){
+        Counter.display.textContent = Counter.count;
+    },
+    inc: function(){
+        Counter.count += 1;
+        Counter.render();
+    },
+    dec: function(){
+        Counter.count -= 1;
+        Counter.render();
+    }
 };
 Counter.init();
 
