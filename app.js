@@ -9,10 +9,15 @@ const Counter = {
         Counter.rootElement = document.querySelector('#app');
         Counter.increaseButton = Counter.rootElement.querySelector('.increase');
         Counter.decreaseButton = Counter.rootElement.querySelector('.decrease');
-        const display = Counter.rootElement.querySelector('.display');
+        Counter.display = Counter.rootElement.querySelector('.display');
     },
-    addListeners: function(){},
+    addListeners: function(){
+        Counter.increaseButton.addEventListener('click', Counter.inc);
+        Counter.decreaseButton.addEventListener('click', Counter.dec);
+    },
     render: function(){},
+    inc: function(){},
+    dec: function(){}
 };
 Counter.init();
 
