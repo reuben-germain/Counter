@@ -1,3 +1,11 @@
+const Counter = {
+    count: 0,
+    init: function(){},
+    cacheDom: function(){},
+    addListeners: function(){},
+    render: function(){},
+};
+
 //Data & Variables
 let count = 0;
 const element = '#app';
